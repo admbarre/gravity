@@ -26,11 +26,9 @@ function init()
 	window.ctx = canvas.getContext("2d");
 	canvas.width = TILE_S * COLS;
 	canvas.height = TILE_S * ROWS;
-	canvas.setAttribute("tabIndex", "0");
-	canvas.focus();
 
-	//	Adding canvas to div element in body
-	document.getElementById("canvas").appendChild(canvas);
+	//	Adding canvas to body
+	document.getElementById("body").appendChild(canvas);
 
 	//	Universe object initialized
 	univ = new Universe();
