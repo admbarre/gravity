@@ -33,19 +33,16 @@ function init()
 	//	Universe object initialized
 	univ = new Universe();
 
-	e1 = new Entity(512, 128, 8, 5, "#FFffFF");
-	e1.vel = e1.vel.add(new Vector([0, 0.0]));
+	e1 = new Entity(500, 300, 10, 5, "#FFffFF");
+	e1.vel = e1.vel.add(new Vector([0.0, 0.2]));
 
-	e2 = new Entity(720, 128, 8, 5, "#55aaFF");
-	e2.vel = e2.vel.add(new Vector([0, 0.0]));
+	e2 = new Entity(600, 310, 10, 7, "#55aaFF");
+	e2.vel = e2.vel.add(new Vector([0, -0.2]));
 
-	// e3 = new Entity(624, 256, 8, 8, "#DD00FF");
-	//e3.vel = e3.vel.add(new Vector([-0.2, -0.07]));
 
 	//	Initialize objects here
 	univ.entities.push(e1);
 	univ.entities.push(e2);
-	//univ.entities.push(e3);
 }
 
 function delta()
