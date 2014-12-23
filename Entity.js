@@ -1,7 +1,7 @@
 (function(Vector) 
 {
 	//	Constructor Function
-	function Entity(x, y, radius,  mass, style)
+	function Entity(x, y, vx, vy, radius,  mass, style)
 	{
 		//	Size variables
 		this.radius = radius;
@@ -12,7 +12,7 @@
 		this.pos = new Vector([x,y]);
 		
 		//	Velocity
-		this.vel = new Vector([0,0]);
+		this.vel = new Vector([vx,vy]);
 
 		//	Acceleration
 		this.acc = new Vector([0,0]);

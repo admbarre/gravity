@@ -4,7 +4,7 @@ html
 	color:			#00bb6B;	
 }
 
-section, nav
+nav
 {
 	background:		#000000;
 
@@ -12,10 +12,7 @@ section, nav
 	padding:		4px;
 	
 	width:			50%;
-}
 
-nav
-{
 	text-align:		center;
 }
 
@@ -24,10 +21,29 @@ a
 	color:			#00bb6B;
 }
 
-canvas
+#center
 {
-	display: 		block;
-	margin: 		0 auto;
+	position:		relative;
+	width:			-webkit-max-content;
+	width:			-moz-max-content;
+	width:			max-content;
+	margin:			0 auto;
+}
+
+#canvas_div
+{
+	display:		inline-block;
+	position:		relative;
+	margin:			0 auto;
+}
+
+#sidebar
+{
+	position:		relative;
+	width:			-webkit-max-content;
+	width:			-moz-max-content;
+	width:			max-content;
+	margin:			0 auto;
 }
 
 .nav_link
