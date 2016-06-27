@@ -1,38 +1,38 @@
 (function(Vector) 
-{
-	//	Constructor Function
-	function Entity(x, y, vx, vy, radius,  mass, style)
-	{
-		//	Size variables
-		this.radius = radius;
-		this.mass = mass;
-		this.style = style;
-		
-		//	Position
-		this.pos = new Vector([x,y]);
-		
-		//	Velocity
-		this.vel = new Vector([vx,vy]);
+ {
+     //	Constructor Function
+     function Entity(x, y, vx, vy, radius,  mass, style)
+     {
+	 //	Size variables
+	 this.radius = radius;
+	 this.mass = mass;
+	 this.style = style;
 
-		//	Acceleration
-		this.acc = new Vector([0,0]);
+	 //	Position
+	 this.pos = new Vector([x,y]);
 
-		//	Net Force
-		this.fNet = new Vector([0,0]);
-	}
+	 //	Velocity
+	 this.vel = new Vector([vx,vy]);
 
-	Entity.prototype.setStyle = function(style)
-	{
-		this.style = style;
-	};
+	 //	Acceleration
+	 this.acc = new Vector([0,0]);
 
-	Entity.prototype.draw = function()
-	{
-		window.ctx.beginPath();
-		window.ctx.arc(this.pos.e(0), this.pos.e(1), this.radius, 0, Math.PI * 2, false);
-		window.ctx.fillStyle = this.style;
-		window.ctx.fill();
-	};
+	 //	Net Force
+	 this.fNet = new Vector([0,0]);
+     }
 
-	window.Entity = Entity;
-})(window.Vector);
+     Entity.prototype.setStyle = function(style)
+     {
+	 this.style = style;
+     };
+
+     Entity.prototype.draw = function()
+     {
+	 window.ctx.beginPath();
+	 window.ctx.arc(this.pos.e(0), this.pos.e(1), this.radius, 0, Math.PI * 2, false);
+	 window.ctx.fillStyle = this.style;
+	 window.ctx.fill();
+     };
+
+     window.Entity = Entity;
+ })(window.Vector);
