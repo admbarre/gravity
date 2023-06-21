@@ -1,5 +1,5 @@
 admbarre.github.io
 ========================
 
-#Universal Gravitation Simulator#
+# Universal Gravitation Simulator
 Just a work in progress for a physics research project.
